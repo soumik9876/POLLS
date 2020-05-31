@@ -1,0 +1,19 @@
+{% extends 'Base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to polls</title>
+</head>
+<body>
+    <h6 class="display-4 homebg">New to polls?Fill up the registration form to 
+        create an account <a href="register">here</a> </h6>
+    {% comment %} {% block content %} {% endcomment %}
+    <small class="display-4">Already have an account? <a href="{% url 'login' %}">login</a>  </small>
+    {% comment %} {% endblock %} {% endcomment %}
+</body>
+</html>
+{% endblock %}
